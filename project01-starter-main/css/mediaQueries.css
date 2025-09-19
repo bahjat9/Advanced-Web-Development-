@@ -1,0 +1,19 @@
+@media only screen and (min-width: 580px) {
+	.header .header__toggle-btn {
+		display: none;
+	}
+
+	.header ul {
+		position: relative;
+		top: unset;
+		left: unset;
+		height: auto;
+		flex-direction: row;
+		justify-content: flex-end;
+		background: transparent;
+		gap: 1em;
+	}
+	.header li {
+		font-size: 1.1em;
+	}
+}

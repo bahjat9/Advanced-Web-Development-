@@ -1,0 +1,16 @@
+:root {
+	--main-clr: #ce0000f5;
+	--accent: #000000;
+	--contrast: #181818;
+	--light-gray: #eeeeee;
+	--border-radius: 4px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Encode Sans Expanded", sans-serif;
+	color: var(--contrast);
+	/* outline: 1px pink solid; */
+}
