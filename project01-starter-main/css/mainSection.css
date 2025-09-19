@@ -1,0 +1,62 @@
+/* main-section   */
+
+.main-section {
+	background-image: url("../imgs/36-CLASSICAL-MD-Cabin-1024x768.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	min-height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-section h1 {
+	color: var(--main-clr);
+	text-shadow: -1px 2px 5px #000000b3, -1px 3px 20px #0000003d,
+		0px 2px 8px #00000045, 1px -3px 0px #ffffffde;
+	font-size: 3.5em;
+	margin-bottom: 0.5em;
+}
+
+.main-section p {
+	background: #ffffff45;
+	padding: 1.25em;
+	max-width: 620px;
+	margin: 0 auto;
+	font-size: 1.2em;
+	border-radius: var(--border-radius);
+}
+
+.main-section .main-section_action {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	padding: 1em;
+}
+
+.main-section button,
+form button {
+	border: none;
+	padding: 23px 50px;
+	cursor: pointer;
+	border-radius: var(--border-radius);
+	min-width: 182px;
+}
+
+.main-section button:first-child {
+	background-color: var(--accent);
+	color: var(--light-gray);
+}
+
+.main-section button:hover {
+	box-shadow: -1px 1px 6px #4f4f4f8f;
+}
+
+@media only screen and (min-width: 580px) {
+	.main-section .main-section_action{
+		    flex-direction: row;
+	}
+}

@@ -1,0 +1,26 @@
+/*   footer  */
+.footer {
+    background: var(--contrast);
+    text-align: center;
+    font-size: 1.2em;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+.footer p,
+.footer i {
+    color: white;
+}
+
+.footer a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.footer .social {
+    max-width: 250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.8em;
+}
