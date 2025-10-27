@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Users Data</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    .card {
+      width: clamp(25%, 280px, 100%);
+      max-width: 650px;
+      border: 1px solid #373535;
+    }
+
+    .card:hover {
+      background-color: #601ef90f;
+      box-shadow: 0 2px 2px 0 rgb(222 222 222 / 14%),
+                  0 3px 1px -2px rgb(228 228 228 / 12%),
+                  0 1px 12px 1px rgb(255 255 255 / 20%);
+    }
+
+    .card .card-title {
+      color: white;
+      position: absolute;
+      bottom: 125px;
+      left: 50%;
+      text-transform: uppercase;
+      padding: 24px;
+      transform: translateX(-50%);
+      width: 100%;
+      text-align: center;
+      font-size: 1.2em;
+      font-weight: 700;
+      transition: all 210ms ease-in-out;
+      backdrop-filter: blur(10px);
+    }
+
+    .card:hover .card-title {
+      bottom: 201px;
+      text-shadow: 1px 1px 2px #000000eb;
+    }
+
+    #users-container {
+      gap: 1.5rem;
+    }
+  </style>
+</head>
+<body class="container py-4">
+  <h1>Users</h1>
+  <div class="spinner-border d-none" role="status"></div>
+  <div class="alert d-none" role="alert"></div>
+  <main>
+    <div class="row row-cols-1 row-cols-md-3 justify-content-center" id="users-container">
+      <!-- User cards injected here -->
+    </div>
+  </main>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">EDIT USER</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          dynamic content here ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="modalSaveBtn">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
