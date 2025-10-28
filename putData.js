@@ -1,5 +1,5 @@
 export const putData = async (baseUrl, usersData, { fallbackOn404 = true } = {}) => {
-  const updateUrl = `${baseUrl}/${usersData.id}`;
+  const updateUrl = `${baseUrl}/api/users/${usersData.id}`;
   try {
     const response = await fetch(updateUrl, {
       method: "PUT",
@@ -31,3 +31,4 @@ export const putData = async (baseUrl, usersData, { fallbackOn404 = true } = {})
     throw error;
   }
 };
+
