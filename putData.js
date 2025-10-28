@@ -31,4 +31,3 @@ export const putData = async (baseUrl, usersData, { fallbackOn404 = true } = {})
     throw error;
   }
 };
-
