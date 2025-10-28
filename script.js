@@ -2,7 +2,7 @@ import { fetchData } from "./fetchData.js";
 import { formFactory } from "./formFactory.js";
 import { putData } from "./putData.js";
 
-const remoteUrl = "https://easy-simple-users-rest-api.onrender.com/users";
+const remoteUrl = "https://easy-simple-users-rest-api.onrender.com";
 const localUrl = "response.json";
 
 // DOM elements
@@ -158,3 +158,4 @@ const updateCard = (updatedUser) => {
 };
 
 loadData();
+
