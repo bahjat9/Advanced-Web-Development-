@@ -158,4 +158,3 @@ const updateCard = (updatedUser) => {
 };
 
 loadData();
-
