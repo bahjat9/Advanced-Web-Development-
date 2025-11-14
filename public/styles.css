@@ -1,0 +1,61 @@
+:root{
+  --bg1:#0f172a;
+  --bg2:#0b1220;
+  --card:#0f1724;
+  --accent:#7c3aed;
+  --muted:#9aa4b2;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: linear-gradient(180deg,var(--bg1),var(--bg2));
+  color:#e6eef8;
+  -webkit-font-smoothing:antialiased;
+}
+.container{max-width:1300px;margin:0 auto;padding:36px 28px}
+.site-header{
+  padding:28px 0 8px;
+  text-align:center;
+}
+.site-header h1{
+  margin:0;
+  font-size:44px;
+  letter-spacing:-1px;
+  font-weight:800;
+  display:inline-block;
+  background: linear-gradient(90deg,var(--accent),#4f46e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.lead{color:var(--muted);margin-top:6px}
+.panel{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:32px;border-radius:16px;margin-top:26px;box-shadow:0 12px 36px rgba(2,6,23,0.6)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px;margin-top:20px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:12px;border:1px solid rgba(255,255,255,0.04);min-height:160px}
+.game-card{transition:transform .18s ease, box-shadow .18s ease;}
+.game-card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(2,6,23,0.6)}
+.game-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.game-title{font-weight:700;font-size:20px}
+.game-price{background:linear-gradient(90deg,var(--accent),#4f46e5);padding:8px 12px;border-radius:10px;font-weight:700;color:white;font-size:14px}
+.game-meta{color:var(--muted);font-size:13px;margin-bottom:8px}
+.game-stats{font-size:13px;color:#cfe8ff}
+.section-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.btn{padding:10px 16px;border:none;border-radius:10px;cursor:pointer;font-size:14px;font-weight:700;transition:all .18s ease}
+.btn-add{background:linear-gradient(90deg,var(--accent),#4f46e5);color:white}
+.btn-add:hover{transform:scale(1.05);box-shadow:0 6px 18px rgba(124,58,237,0.4)}
+.btn-delete{background:#dc2626;color:white;width:100%;margin-top:12px;padding:10px 12px;font-size:14px}
+.btn-delete:hover{background:#991b1b}
+.btn-submit{background:var(--accent);color:white;width:100%;margin-top:12px}
+.btn-submit:hover{background:#6d28d9}
+.modal{display:none;position:fixed;z-index:1000;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,0.6)}
+.modal-content{background:var(--bg1);margin:8% auto;padding:32px;border:1px solid rgba(255,255,255,0.1);border-radius:14px;width:90%;max-width:620px;color:#e6eef8}
+.modal-content h2{margin-top:0}
+.close{color:#9aa4b2;float:right;font-size:24px;font-weight:700;cursor:pointer}
+.close:hover{color:#e6eef8}
+#addForm input{width:100%;padding:10px;margin-bottom:10px;background:#0b1220;border:1px solid rgba(255,255,255,0.1);border-radius:8px;color:#e6eef8;font-family:inherit}
+#addForm input::placeholder{color:#9aa4b2}
+#addForm input:focus{outline:none;border-color:var(--accent)}
+.site-footer{padding:18px 0;color:var(--muted);text-align:center}
+@media (max-width:520px){.container{padding:14px}.game-title{font-size:15px}.section-header{flex-direction:column;gap:8px}.btn-add{width:100%}}
